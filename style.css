@@ -16,11 +16,11 @@ main {
   }
   
 :root {
-    --mainColor: #4E5340 ;
-    --mainColorLight: #697268;
-    --secondaryColor: #95A3A4;
-    --textColor: #B7D1DA;
-    --thirdColor: #E2E8DD;
+    --mainColor: #05E651 ;
+    --mainColorLight: #303CEB;
+    --secondaryColor: #32C0EA;
+    --textColor: #EBEA00;
+    --thirdColor: #EB422A;
   }
   
   img {
@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: #4E5340;
+    background-color: #EB422A;
     color: #B7D1DA;
 }
 
@@ -91,7 +91,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #4E5340;
+        background-color: #EB422A;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
@@ -101,7 +101,7 @@ header {
         visibility: visible;
         color: #B7D1DA;
         z-index: 1;
-        background-color: #4E5340;
+        background-color: #EB422A;
     }
     
     .nav-list {
@@ -110,7 +110,7 @@ header {
     }
 
     .nav-list li a {
-        color: #B7D1DA;
+        color: white;
     }
 }
 
@@ -125,9 +125,9 @@ footer {
     border-top: 5px solid black;
     padding: 0.5rem;
     margin-top: 1rem;
-    color: #B7D1DA;
+    color: black;
     align-items: center;
-    background-color: #4E5340;
+    background-color: #EBEA00;
   }
 
 .divfooter {
@@ -204,6 +204,24 @@ footer figure {
 
 .integrantes img {
     border-radius: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoFavicon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.fotoFondo {
+    width: 100%;
 }
 
 
