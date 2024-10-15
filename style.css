@@ -16,11 +16,11 @@ main {
   }
   
 :root {
-    --mainColor: #05E651 ;
-    --mainColorLight: #303CEB;
-    --secondaryColor: #32C0EA;
-    --textColor: #EBEA00;
-    --thirdColor: #EB422A;
+    --mainColor: #8f9044 ;
+    --mainColorLight: #f8a523;
+    --secondaryColor: #fc8020;
+    --textColor: #cf1500;
+    --thirdColor: #352f3d;
   }
   
   img {
@@ -40,8 +40,8 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: #EB422A;
-    color: #B7D1DA;
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 
 
@@ -54,7 +54,7 @@ header {
 
 .nav-list li a {
     text-decoration: none;
-    color: #B7D1DA;
+    color: var(--textColor);
 }
 
 .abrir-menu,
@@ -73,11 +73,11 @@ header {
     }
 
     .abrir-menu {
-        color: #E2E8DD;
+        color: var(--textColor);
     }
 
     .cerrar-menu {
-        color: #E2E8DD;
+        color: var(--textColor);
     }
 
     .nav {
@@ -91,7 +91,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #EB422A;
+        background-color: var(--mainColor);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
@@ -99,9 +99,9 @@ header {
     .nav.visible {
         opacity: 1;
         visibility: visible;
-        color: #B7D1DA;
+        color: var(--textColor);
         z-index: 1;
-        background-color: #EB422A;
+        background-color: var(--mainColor);
     }
     
     .nav-list {
@@ -110,7 +110,7 @@ header {
     }
 
     .nav-list li a {
-        color: white;
+        color: var(--textColor);
     }
 }
 
@@ -122,12 +122,12 @@ header {
 
 footer {
     text-align: center;
-    border-top: 5px solid black;
+    border-top: 5px solid var(--thirdColor);
     padding: 0.5rem;
     margin-top: 1rem;
-    color: black;
+    color: var(--textColor);
     align-items: center;
-    background-color: #EBEA00;
+    background-color: var(--mainColor);
   }
 
 .divfooter {
@@ -144,15 +144,19 @@ footer figure {
 
 .container1, .container2 {
     text-align: center;
-    border: 1px solid black;
-    margin: 10px;
+    border: 1px solid var(--mainColorLight);
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container1, .container2 h1 {
-    margin: 1.2rem 0.5rem 0rem;
+.container1 h1, h2, .container2 h1 {
+    color: var(--secondaryColor);
+}
+
+.container2 h1 {
+    margin-top: 10px;
 }
 
 .colores {
