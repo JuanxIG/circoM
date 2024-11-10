@@ -613,6 +613,53 @@ footer figure {
 }
 
 
+/* Card container styling */
+.containerCyF {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+/* Title styling */
+.containerCyF h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.containerCyF h3 {
+  font-size: 18px;
+  color: #555;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+#boton-compra {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#boton-compra i {
+  margin-right: 8px;
+}
+
+#boton-compra:hover {
+  background-color: #0056b3;
+}
+
+
 
 /* Contenedor principal */
 .container1 {
@@ -719,4 +766,162 @@ footer figure {
   .card {
       flex-direction: row;
   }
+}
+
+/* FORMULARIO GENERAL */
+
+.formulario {
+  display: flex;
+  align-items: center;
+}
+
+.formulario2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESERVA */
+
+ /* General form styling */
+ .reserva {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.reserva label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.radio-option {
+  margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+/* Styling for select dropdowns */
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+/* Total price display */
+#totalPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* PAGINA DE PAGO */
+
+ /* Payment form container */
+ .payment-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Two columns for card details */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Total amount styling */
+.total-amount {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Payment button styling */
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #0056b3;
 }

@@ -24,9 +24,9 @@
           </ul>
         </nav>
     </header>
-    <main>
-        <h1></h1>
-        <form action="/submit-date" method="post" class="reserva">
+    <main class="formulario">
+        <form action="pago.html" method="post" class="reserva">
+            <label>Seleccionar Fecha:</label>
             <div class="radio-option">
                 <label>
                     <input type="radio" name="fecha" value="2024-11-10" required>
@@ -51,17 +51,25 @@
                     13 de noviembre de 2024
                 </label>
             </div>
-            <br>
-            <label for="ticketQuantity">Cantidad de Entradas:</label>
-            <select id="ticketQuantity" name="ticketQuantity" onchange="calculateTotal()">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
+        
+            <label for="plateaQuantity">Seleccionar Platea:</label>
+            <select id="plateaQuantity" name="plateaQuantity">
+                <option value="1" data-price="50">Platea Alta</option>
+                <option value="2" data-price="75">Platea Intermedia</option>
+                <option value="3" data-price="100">Platea Premium</option>
             </select>
-            <p id="total">Total: $0</p>
-            <button type="submit" class="submit-btn">Enviar</button>
+        
+            <label for="ticketQuantity">Cantidad de Entradas:</label>
+            <select id="ticketQuantity" name="ticketQuantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        
+            <p id="totalPrice">Total: $0</p>
+            <button type="button" class="submit-btn" onclick="saveAndRedirect()">Enviar</button>
         </form>
 
     </main>
@@ -76,17 +84,8 @@
     </footer>
     <script src="../main.js"></script>
     <script src="../jquery.js"></script>
-    <script>
-        const ticketPrice = 50; // Precio de cada entrada
+    <script src="../pagototal.js">
     
-        function calculateTotal() {
-          const quantity = document.getElementById("ticketQuantity").value;
-          const total = quantity * ticketPrice;
-          document.getElementById("total").textContent = `Total: $${total}`;
-        }
-    
-        // Calcular el total al cargar la página
-        document.addEventListener("DOMContentLoaded", calculateTotal);
-      </script>
+    </script>
 </body>
 </html>
