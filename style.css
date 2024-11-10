@@ -294,6 +294,35 @@ footer figure {
   transition: background-color 0.3s ease-in-out;
 }
 
+.mision{
+  text-align: center;
+  border: 1px solid var(--mainColorLight);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.foto{
+  margin-top: 1rem;
+
+}
+
+.test{
+  text-align: center;
+  border: 1px solid var(--mainColorLight);
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+}
+
+.nosotros{
+  text-align: center;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
 
 @media only screen and (min-width: 728px) {
 
@@ -310,7 +339,18 @@ footer figure {
     .intro-container p, .intro-container ul li {
         width: 350px;
     }
+
+    .mision {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 1rem;
   }
+  .testimonios{
+      display: flex;
+      flex-direction: row;
+  }
+  }
+  
 
 
 @media only screen and (min-width: 1024px) {
@@ -323,7 +363,15 @@ footer figure {
     .intro-container p, .intro-container ul li {
         width: 450px;
     }
+    .mision {
+      width: 800px;
   }
+  .fotosoleil{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+  }
+
 
 /* CONTACTO */
 
