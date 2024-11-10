@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+main {
+    flex: 1;
+  }
+  
+:root {
+    --mainColor: #8f9044 ;
+    --mainColorLight: #f8a523;
+    --secondaryColor: #fc8020;
+    --textColor: #cf1500;
+    --thirdColor: #352f3d;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+
+/* HEADER */
+
+.icono-grupo {
+    width: 60px;
+}
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+
+/* Menu Hamburguesa */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: var(--textColor);
+    }
+
+    .cerrar-menu {
+        color: var(--textColor);
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--mainColor);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        color: var(--textColor);
+        z-index: 1;
+        background-color: var(--mainColor);
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: var(--textColor);
+    }
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    border-top: 5px solid var(--thirdColor);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: var(--textColor);
+    align-items: center;
+    background-color: var(--mainColor);
+  }
+
+.divfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer figure {
+    width: 60px;
+}
+
+/* MAIN */
+
+.container1, .container2 {
+    text-align: center;
+    border: 1px solid var(--mainColorLight);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container1 h1, h2, .container2 h1 {
+    color: var(--secondaryColor);
+}
+
+.container2 h1 {
+    margin-top: 10px;
+}
+
+.colores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.colores .color1, .color2, .color3, .color4, .color5 {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.color1 {
+    background-color: var(--mainColor);
+}
+.color2 {
+    background-color: var(--mainColorLight);
+}
+.color3 {
+    background-color: var(--secondaryColor);
+}
+.color4 {
+    background-color: var(--textColor);
+}
+.color5 {
+    background-color: var(--thirdColor);
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.integrantes figure {
+    width: 150px;
+}
+
+.integrantes img {
+    border-radius: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoFavicon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.fotoFondo {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 650px) {
+    .container1, .container2 {
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .colores {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container1, .container2 {
+        width: 750px;
+    }
+}

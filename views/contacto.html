@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circo Maravilla</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header id="header">
+        <figure class="icono-grupo"><img src="../public/tienda-de-circo.png" alt="icono-grupo"></figure>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Horarios</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Comprar entradas</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="contacto-h1">Contacto</h1>
+        <div class="containerC">
+            <div class="subcontacto">
+                <p>
+                    Desde nuestra empresa siempre atendemos a los clientes en busca de su satisfacción y diversión. Por eso mismo, no dude en contactarnos si lo necesita. Le dejamos nuestros datos abajo o puede llenar el formulario para obtener una respuesta más rápida. ¡Saludos!
+                </p>
+                <div class="contact-info">
+                    <h4><strong>Correo:</strong> circomaravilla@gmail.com</h4>
+                    <h4><strong>Teléfono:</strong> 1168932012</h4>
+                    <h4><strong>Ubicación:</strong> CABA, Uade Lima</h4>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.490480559583!2d-58.38449352353043!3d-34.61704355820335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1731175511277!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+        </div>
+        
+
+
+        <h1 class="contacto-h1">Muchas Gracias por Contactarse!</h1>
+
+        <div>
+            <form class="contacto-form">
+                <div class="form-control false"><label for="correoContacto">E-Mail de contacto</label><input id="correoContacto"
+                        type="text" value=""></div>
+                <div class="form-control false"><label for="telefonoContacto">Telefono de contacto</label><input
+                        id="telefonoContacto" type="text" value=""></div>
+                <div class="form-control false"><label for="descripcionPuesto">Mensaje</label><textarea id="descripcionPuesto"
+                        rows="6"></textarea></div>
+                <div class="form-control false"><label for="montoOfrecido">Monto Ofrecido</label><input id="montoOfrecido" value="">
+                </div><button class="button-contacto" type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="divfooter">
+            <div>Diseño y Desarrollo Web, Primer año.</div>
+            <div>Grupo 3</div>
+            <div>"Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024"</div>
+            <figure><img src="../public/logo-uade.png" alt=""></figure>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+    <script src="../jquery.js"></script>
+</body>
+</html>
