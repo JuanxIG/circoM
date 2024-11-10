@@ -40,8 +40,14 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColorLight);
+    background-color: var(--mainColor);
     color: var(--textColor);
+}
+
+#nav ul li a.active-page
+{
+  text-decoration: underline;
+  
 }
 
 
@@ -62,66 +68,6 @@ header {
     display: none;
 }
 
-/* Pagina Preguntas freceuntes */
-.faq-container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.faq-title {
-    text-align: center;
-    font-size: 2em;
-    color: #e63946;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.faq-item {
-    margin-bottom: 20px;
-}
-
-.faq-button {
-    width: 100%;
-    padding: 15px;
-    background-color: #e63946;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-align: left;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.faq-button:hover {
-    background-color: #d62828;
-}
-
-.faq-answer {
-    padding: 15px;
-    background-color: #f1faee;
-    display: none;
-    border-left: 4px solid #e63946;
-    margin-top: 5px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .faq-container {
-        width: 90%;
-    }
-}
-/**/
 @media screen and (max-width: 740px) {
     .abrir-menu,
     .cerrar-menu {
@@ -175,161 +121,8 @@ header {
 }
 
 
-/* NUESTROS ARTISTAS */
-/* Clase para el estilo del h2 con un diseño más sencillo */
-.simple-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em; /* Tamaño del texto reducido */
-    color: #333; /* Color más oscuro y neutro */
-    background: #f8f8f8; /* Fondo suave y neutro */
-    padding: 25px 20px; /* Menor espacio de padding */
-    text-align: center;
-    border-radius: 8px; /* Bordes ligeramente redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    position: relative;
-    margin: 10px auto;
-    max-width: 80%;
-    word-wrap: break-word;
-    text-transform: capitalize;
-}
-
-/* Sombra suave alrededor del texto */
-.simple-text::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 5px; /* Sombra sutil */
-    background: rgba(0, 0, 0, 0.15); /* Sombra suave */
-    opacity: 0.2;
-    transform: translateY(-50%);
-}
-
-/* Efecto hover suave */
-.simple-text:hover {
-    transform: scale(1.02); /* Ligera escala al pasar el ratón */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil en hover */
-    filter: brightness(1.05); /* Ligeramente más brillante */
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .simple-text {
-        font-size: 0.9em; /* Reducir el tamaño en pantallas más pequeñas */
-        padding: 20px 15px; /* Menos padding en pantallas pequeñas */
-    }
-}
 
 
-
-/* Contenedor principal */
-.container1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff;
-}
-
-/* Estilo de la tarjeta */
-.card {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
-    align-items: center;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-/* Contenido de la tarjeta */
-.card-content {
-    padding: 25px;
-    flex: 1;
-}
-
-.card-title {
-    font-size: 2em;
-    color: #e63946;
-    margin: 0 0 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.card-subtitle {
-    font-size: 1.2em;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 15px;
-    letter-spacing: 0.5px;
-}
-
-.card-description {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-/* Imagen de la tarjeta */
-.card-image {
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card-image:hover {
-    transform: scale(1.05);
-    filter: brightness(0.8);
-}
-
-
-
-#boton-compra {
-    display: inline-block;
-    padding: 15px 30px; 
-    background-color: #e74c3c; /* Rojo brillante */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px; /* Bordes redondeados */
-    text-decoration: none; /* Eliminar subrayado del enlace */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
-  
-  #boton-compra:hover {
-    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
-    transform: scale(1.05); /* Aumento sutil de tamaño para darle un efecto de interacción */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
-  }
-  
-  #boton-compra:active {
-    background-color: #b03a2e; /* Rojo aún más oscuro al hacer clic */
-    transform: scale(1); /* El botón vuelve a su tamaño original */
-  }
-
-@media (min-width: 1024px) {
-    .card {
-        flex-direction: row;
-    }
-}
 
 /* FOOTER */
 
@@ -353,105 +146,842 @@ footer figure {
     width: 60px;
 }
 
+
+
 /* MAIN */
 
-
-.container2 h1 {
-    margin-top: 10px;
-}
-
-.colores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 10px 0px;
-}
-
-.colores .color1, .color2, .color3, .color4, .color5 {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-}
-
-
-.color1 {
-    background-color: var(--mainColor);
-}
-.color2 {
-    background-color: var(--mainColorLight);
-}
-.color3 {
-    background-color: var(--secondaryColor);
-}
-.color4 {
-    background-color: var(--textColor);
-}
-
-
-.integrantes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
-    align-items: center;
-}
-
-.integrantes figure {
-    width: 150px;
-}
-
-.integrantes img {
-    border-radius: 10px;
-}
-
-.logos {
-    display: flex;
-    justify-content: space-around;
-}
-
-.logoFavicon {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    margin: 10px;
-    
-}
-
-.fotoFondo {
-    width: 100%;
-}
-
-
-@media screen and (min-width: 650px) {
-    .container1, .container2 {
-        width: 600px;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
-
-    .colores {
-        flex-direction: row;
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-    .container1, .container2 {
-        width: 750px;
-    }
-}
-
-#PaginaReservar {
-    background-image: url('https://images.unsplash.com/photo-1496086363406-27fbdabb8593?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
-    height: 100vh; /* Asegura que la imagen cubra toda la ventana */
-    margin: 0; /* Elimina márgenes por defecto */
+.image-container {
+    position: relative;
+    width: 100%; /* O ajusta el ancho deseado */
+    margin-bottom: 1rem;
   }
+  
+  .image-container img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Cambia a blanco para mayor contraste */
+    font-size: 20px; /* Tamaño de texto más grande */
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 30px; /* Más espacio para un efecto de “botón” */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Fondo degradado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    letter-spacing: 1px; /* Espaciado entre letras para mejor lectura */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto para destacar */
+    font-style: italic;
+  }
+
+.intro {
+    text-align: center;
+    margin: 1rem 0px;
+}
+.intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e63946;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #ff9a8b, #fad0c4);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+}
+
+.intro span {
+  font-size: 1.3em;
+  color: #f1faee;
+}
+
+.intro:hover {
+  background: linear-gradient(45deg, #fad0c4, #ff9a8b);
+  transform: scale(1.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.intro-container p, .intro-container ul li {
+    width: 250px;
+}
+
+
+.intro-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 320px;
+  margin: 10px auto;
+  text-align: left;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-container p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.intro-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.intro-container ul li {
+  margin: 15px 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.intro-container ul li strong {
+  color: #e63946; /* Color rojo para resaltar */
+}
+
+.intro-container:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.intro-container div {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-container div p {
+  font-size: 1.2em;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+}
+
+.intro-container div ul {
+  font-size: 1.1em;
+  color: #444;
+  margin-top: 10px;
+}
+
+.intro-container div ul li {
+  padding: 8px;
+  border-left: 4px solid #e63946; /* Bordes de color rojo para resaltar */
+  margin: 5px 0;
+}
+
+.intro-container div ul li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.foto{
+  margin-top: 1rem;
+
+}
+
+.test{
+  text-align: center;
+  border: #e63946;
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.test:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tit-test{
+  margin-bottom: 5px;
+  color: #e63946;
+}
+.titmagia{
+  margin-top: 2rem;
+  color:#e63946;
+}
+
+
+
+
+@media only screen and (min-width: 728px) {
+
+  .text-overlay {
+    font-size: 28px;
+  }
+
+    .intro-container {
+        flex-direction: row;
+        max-width: 720px;
+        gap: 20px;
+    }
+
+    .intro-container p, .intro-container ul li {
+        width: 350px;
+    }
+
+
+  .testimonios{
+      display: flex;
+      flex-direction: row;
+      
+  }
+  .fotosoleil{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .titmagia{
+    margin-top: 2rem;
+  }
+}
+  
+  
+
+
+@media only screen and (min-width: 1024px) {
+
+    .intro-container {
+        flex-direction: row;
+        max-width: 900px;
+    }
+    
+    .intro-container p, .intro-container ul li {
+        width: 450px;
+    }
+
+  .fotosoleil{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.titmagia{
+  margin-top: 2rem;
+}
+  }
+
+
+/* CONTACTO */
+
+.containerC {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.subcontacto {
+  flex: 1;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subcontacto p {
+  font-size: 1.2em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subcontacto p span {
+  color: #e63946;
+  font-weight: 600;
+}
+
+.contact-info h4 {
+  font-size: 1.3em;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 500;
+  position: relative;
+  padding-left: 25px;
+}
+
+.contact-info h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #e63946;
+  border-radius: 50%;
+}
+
+.contact-info h4 strong {
+  color: #e63946;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.containerC h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .containerC {
+      flex-direction: column;
+  }
+}
+
+/* FORMULARIO */
+  
+  .form-control {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-contacto {
+    border-radius: 10px;
+    color: var(--secondaryColor);
+    padding: 7px;
+    border: 1px solid #320b0c;
+  }
+  .contacto-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control input, .form-control textarea {
+  width: 300px;
+  font: inherit;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .form-control input {
+      width: 400px;
+    }
+  }
+  
+
+/* RESERVAR */
+.reserva {
+  text-align: center;
+}
+.form-container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.radio-option {
+  margin: 10px 0;
+}
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* PAGINA DE PREGUNTAS FRECUENTES */
+
+/* Pagina Preguntas freceuntes */
+.faq-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2em;
+  color: #e63946;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.faq-button:hover {
+  background-color: #d62828;
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: #f1faee;
+  display: none;
+  border-left: 4px solid #e63946;
+  margin-top: 5px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+      width: 90%;
+  }
+}
+
+
+/* NUESTROS ARTISTAS */
+/* Clase para el estilo del h2 con un diseño más sencillo */
+.simple-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em; /* Tamaño del texto reducido */
+  color: #333; /* Color más oscuro y neutro */
+  background: #f8f8f8; /* Fondo suave y neutro */
+  padding: 25px 20px; /* Menor espacio de padding */
+  text-align: center;
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  position: relative;
+  margin: 10px auto;
+  max-width: 80%;
+  word-wrap: break-word;
+  text-transform: capitalize;
+}
+
+/* Sombra suave alrededor del texto */
+.simple-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px; /* Sombra sutil */
+  background: rgba(0, 0, 0, 0.15); /* Sombra suave */
+  opacity: 0.2;
+  transform: translateY(-50%);
+}
+
+/* Efecto hover suave */
+.simple-text:hover {
+  transform: scale(1.02); /* Ligera escala al pasar el ratón */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil en hover */
+  filter: brightness(1.05); /* Ligeramente más brillante */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .simple-text {
+      font-size: 0.9em; /* Reducir el tamaño en pantallas más pequeñas */
+      padding: 20px 15px; /* Menos padding en pantallas pequeñas */
+  }
+}
+
+
+/* Card container styling */
+.containerCyF {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+/* Title styling */
+.containerCyF h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.containerCyF h3 {
+  font-size: 18px;
+  color: #555;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+#boton-compra {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#boton-compra i {
+  margin-right: 8px;
+}
+
+#boton-compra:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Contenedor principal */
+.container1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+  padding: 25px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 2em;
+  color: #e63946;
+  margin: 0 0 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-subtitle {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Imagen de la tarjeta */
+.card-image {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+
+/* CIUDADES Y FECHAS PAGINA */
+
+#boton-compra {
+  display: inline-block;
+  padding: 15px 30px; 
+  background-color: #e74c3c; /* Rojo brillante */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#boton-compra:hover {
+  background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Aumento sutil de tamaño para darle un efecto de interacción */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+#boton-compra:active {
+  background-color: #b03a2e; /* Rojo aún más oscuro al hacer clic */
+  transform: scale(1); /* El botón vuelve a su tamaño original */
+}
+
+@media (min-width: 1024px) {
+  .card {
+      flex-direction: row;
+  }
+}
+
+/* FORMULARIO GENERAL */
+
+.formulario {
+  display: flex;
+  align-items: center;
+}
+
+.formulario2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESERVA */
+
+ /* General form styling */
+ .reserva {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.reserva label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.radio-option {
+  margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+/* Styling for select dropdowns */
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+/* Total price display */
+#totalPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* PAGINA DE PAGO */
+
+ /* Payment form container */
+ .payment-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Two columns for card details */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Total amount styling */
+.total-amount {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Payment button styling */
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #0056b3;
+}
