@@ -80,18 +80,14 @@
         document.getElementById('total').textContent = `Total: $${total}`;
       </script>
 
-<script>
-    // Placeholder amount for total price (this could be replaced dynamically)
-    document.getElementById('totalAmount').textContent = `Total: $${sessionStorage.getItem('totalPrice') || '0'}`;
+    <script>
+        document.getElementById('totalAmount').textContent = `Total: $${sessionStorage.getItem('totalPrice') || '0'}`;
 
-    // Function to process the payment and redirect to the homepage
-    function processPayment() {
-        // Simulate payment processing (you could add actual processing logic here)
-        alert('Procesando el pago...');
+        function processPayment() {
+            alert('Procesando el pago...');
 
-        // Redirect to the homepage after payment
-        window.location.href = 'index.html'; // Cambia 'index.html' a la URL de tu página de inicio
-    }
-</script>
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 </html>
