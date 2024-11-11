@@ -575,7 +575,6 @@ footer figure {
 
 /* PAGINA DE PREGUNTAS FRECUENTES */
 
-/* Pagina Preguntas freceuntes */
 .faq-container {
   width: 80%;
   max-width: 1200px;
@@ -637,16 +636,16 @@ footer figure {
 
 
 /* NUESTROS ARTISTAS */
-/* Clase para el estilo del h2 con un diseño más sencillo */
+
 .simple-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em; /* Tamaño del texto reducido */
-  color: #333; /* Color más oscuro y neutro */
-  background: #f8f8f8; /* Fondo suave y neutro */
-  padding: 25px 20px; /* Menor espacio de padding */
+  font-size: 1em; 
+  color: #333; 
+  background: #f8f8f8; 
+  padding: 25px 20px; 
   text-align: center;
-  border-radius: 8px; /* Bordes ligeramente redondeados */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   line-height: 1.6;
   letter-spacing: 0.5px;
   position: relative;
@@ -669,23 +668,20 @@ footer figure {
   transform: translateY(-50%);
 }
 
-/* Efecto hover suave */
 .simple-text:hover {
   transform: scale(1.02); /* Ligera escala al pasar el ratón */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil en hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   filter: brightness(1.05); /* Ligeramente más brillante */
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .simple-text {
-      font-size: 0.9em; /* Reducir el tamaño en pantallas más pequeñas */
-      padding: 20px 15px; /* Menos padding en pantallas pequeñas */
+      font-size: 0.9em;
+      padding: 20px 15px; 
   }
 }
 
 
-/* Card container styling */
 .containerCyF {
   margin: 0 auto;
   max-width: 600px;
@@ -696,7 +692,6 @@ footer figure {
   text-align: center;
 }
 
-/* Title styling */
 .containerCyF h2 {
   font-size: 22px;
   color: #333;
@@ -710,7 +705,6 @@ footer figure {
   margin-bottom: 20px;
 }
 
-/* Button styling */
 #boton-compra {
   display: inline-block;
   padding: 12px 20px;
@@ -812,25 +806,25 @@ footer figure {
 #boton-compra {
   display: inline-block;
   padding: 15px 30px; 
-  background-color: #e74c3c; /* Rojo brillante */
+  background-color: #e74c3c; 
   color: white;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  border-radius: 5px; /* Bordes redondeados */
-  text-decoration: none; /* Eliminar subrayado del enlace */
+  border-radius: 5px; 
+  text-decoration: none; 
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #boton-compra:hover {
-  background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+  background-color: #c0392b; 
   transform: scale(1.05); /* Aumento sutil de tamaño para darle un efecto de interacción */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
 }
 
 #boton-compra:active {
-  background-color: #b03a2e; /* Rojo aún más oscuro al hacer clic */
+  background-color: #b03a2e; 
   transform: scale(1); /* El botón vuelve a su tamaño original */
 }
 
@@ -855,7 +849,6 @@ footer figure {
 
 /* RESERVA */
 
- /* General form styling */
  .reserva {
   width: 400px;
   margin: 20px auto;
@@ -882,7 +875,6 @@ footer figure {
   accent-color: #007bff;
 }
 
-/* Styling for select dropdowns */
 select {
   width: 100%;
   padding: 8px;
@@ -893,7 +885,6 @@ select {
   font-size: 14px;
 }
 
-/* Total price display */
 #totalPrice {
   font-size: 16px;
   font-weight: bold;
@@ -902,7 +893,6 @@ select {
   margin: 10px 0;
 }
 
-/* Submit button styling */
 .submit-btn {
   width: 100%;
   padding: 10px;
@@ -922,7 +912,6 @@ select {
 
 /* PAGINA DE PAGO */
 
- /* Payment form container */
  .payment-container {
   background-color: #fff;
   padding: 30px;
@@ -938,7 +927,6 @@ select {
   margin-bottom: 20px;
 }
 
-/* Input fields styling */
 .form-group {
   margin-bottom: 15px;
 }
@@ -963,14 +951,12 @@ select {
   outline: none;
 }
 
-/* Two columns for card details */
 .form-row {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
 
-/* Total amount styling */
 .total-amount {
   text-align: center;
   font-size: 18px;
@@ -980,7 +966,6 @@ select {
   margin-bottom: 20px;
 }
 
-/* Payment button styling */
 .pay-btn {
   width: 100%;
   padding: 12px;
