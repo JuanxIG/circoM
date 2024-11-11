@@ -331,6 +331,10 @@ footer figure {
   color:#e63946;
 }
 
+.video{
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -363,6 +367,10 @@ footer figure {
   .titmagia{
     margin-top: 2rem;
   }
+  .video{
+    display: flex;
+    justify-content: center;
+  }
 }
   
   
@@ -386,7 +394,11 @@ footer figure {
 .titmagia{
   margin-top: 2rem;
 }
-  }
+.video{
+  display: flex;
+  justify-content: center;
+}
+}
 
 
 /* CONTACTO */
