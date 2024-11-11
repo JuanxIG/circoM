@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     height: 80px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background-color: var(--mainColorLight);
     color: var(--textColor);
 }
 
@@ -885,7 +885,7 @@ select {
 #totalPrice {
   font-size: 16px;
   font-weight: bold;
-  color: #007bff;
+  color: var(--secondaryColor);
   text-align: center;
   margin: 10px 0;
 }
@@ -896,7 +896,7 @@ select {
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #007bff;
+  background-color: var(--secondaryColor);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -905,7 +905,7 @@ select {
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--mainColor);
 }
 
 /* PAGINA DE PAGO */
@@ -963,7 +963,7 @@ select {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  color: #007bff;
+  color: var(--secondaryColor);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -975,7 +975,7 @@ select {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff;
+  background-color: var(--secondaryColor);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -983,5 +983,14 @@ select {
 }
 
 .pay-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--mainColor);
+}
+
+#PaginaReservar {
+  background-image: url('https://images.unsplash.com/photo-1496086363406-27fbdabb8593?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
+  height: 100vh; /* Asegura que la imagen cubra toda la ventana */
+  margin: 0; /* Elimina márgenes por defecto */
 }
