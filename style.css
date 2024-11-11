@@ -490,6 +490,13 @@ footer figure {
   text-transform: uppercase;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none; 
+  margin-top: 5px;
+}
+
 @media (max-width: 768px) {
   .containerC {
       flex-direction: column;
@@ -985,9 +992,14 @@ select {
 
 #PaginaReservar {
   background-image: url('https://images.unsplash.com/photo-1496086363406-27fbdabb8593?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-  background-position: center; /* Centra la imagen */
-  background-attachment: fixed; /* Fija la imagen cuando se hace scroll */
-  height: 100vh; /* Asegura que la imagen cubra toda la ventana */
-  margin: 0; /* Elimina márgenes por defecto */
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  height: 100vh; 
+  margin: 0; 
+}
+
+.form-error {
+  color: red;
+  font-size: 0.9em;
 }

@@ -53,15 +53,28 @@
         <h1 class="contacto-h1">Muchas Gracias por Contactarse!</h1>
 
         <div>
-            <form class="contacto-form">
-                <div class="form-control false"><label for="correoContacto">E-Mail de contacto</label><input id="correoContacto"
-                        type="text" value=""></div>
-                <div class="form-control false"><label for="telefonoContacto">Telefono de contacto</label><input
-                        id="telefonoContacto" type="text" value=""></div>
-                <div class="form-control false"><label for="descripcionPuesto">Mensaje</label><textarea id="descripcionPuesto"
-                        rows="6"></textarea></div>
-                <div class="form-control false"><label for="montoOfrecido">Monto Ofrecido</label><input id="montoOfrecido" value="">
-                </div><button class="button-contacto" type="submit">ENVIAR</button>
+            <form class="contacto-form" id="contactoForm">
+                <div class="form-control false">
+                    <label for="correoContacto">E-Mail de contacto</label>
+                    <input id="correoContacto" type="text" value="">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-control false">
+                    <label for="telefonoContacto">Teléfono de contacto</label>
+                    <input id="telefonoContacto" type="text" value="">
+                    <span class="error-message" id="telefonoError"></span>
+                </div>
+                <div class="form-control false">
+                    <label for="descripcionPuesto">Mensaje</label>
+                    <textarea id="descripcionPuesto" rows="6"></textarea>
+                    <span class="error-message" id="mensajeError"></span>
+                </div>
+                <div class="form-control false">
+                    <label for="montoOfrecido">Monto Ofrecido</label>
+                    <input id="montoOfrecido" value="">
+                    <span class="error-message" id="montoError"></span>
+                </div>
+                <button class="button-contacto" type="submit">ENVIAR</button>
             </form>
         </div>
     </main>
@@ -77,5 +90,6 @@
     </footer>
     <script src="./main.js"></script>
     <script src="./jquery.js"></script>
+    <script src="./validacionC.js"></script>
 </body>
 </html>
